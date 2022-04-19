@@ -1,0 +1,230 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+	<style>
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width:100%;
+font-family:Sofia;
+border:10px solid black;
+}
+
+.topnav a {
+  float: left;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:black;
+  color: white;
+}
+
+body{
+	background-color: black;
+}
+		a{
+			text-decoration: none;
+			font-family: "Sofia";
+			color:#D46A6A;
+			font-size:20px;
+
+		}
+		.container{
+		display: flex;
+		flex-grow: 4;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items:baseline;
+	}
+	
+		#content1{
+	height: 400px;
+	width:400px;
+	position:absolute;
+	top:150px;
+	left:350px;
+}
+#bannerimage1{
+	padding-bottom: 50px;
+margin-bottom: 20px;
+text-align: center;
+color: #f8f8f8;
+background: url("http://collage.cropdog.com/wp-content/uploads/2014/01/Keriwedding1image1386621339.jpg") no-repeat center;
+background-size: cover;
+}
+.inner-banner-image{
+height:200px;
+width:300px;
+	position:relative;
+	top:40px;
+	left:40px;
+}
+.banner_content{
+	position: relative;
+padding-top: 4%;
+padding-bottom: 14%;
+overflow:hidden;
+margin-bottom: 12%;
+margin-left: 8%;
+background-color: rgba(0, 0, 0, 0.7);
+max-width: 660px;
+}
+.button{
+	color: #fff;
+background-color: #c9302c;
+border-color: #ac2925;
+box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+padding: 10px 16px;
+font-size: 15px;
+border-radius: 6px;
+}
+#content2{
+	height: 400px;
+	width:400px;
+	position:absolute;
+	top:150px;
+	left:750px;
+}
+#bannerimage2{
+	padding-bottom: 50px;
+margin-bottom: 20px;
+text-align: center;
+color: #f8f8f8;
+background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRB9vLHMtMMhCAUg34bv5N9CxSOwrAqlhWsZw&usqp=CAU") no-repeat center;
+background-size: cover;
+}
+#content3{
+	height: 400px;
+	width:400px;
+	position:absolute;
+	top:400px;
+	left:350px;
+}
+#bannerimage3{
+	padding-bottom: 50px;
+margin-bottom: 20px;
+text-align: center;
+color: #f8f8f8;
+background: url("https://mashup-portfolio-wpmdmvecox.now.sh/assets/images/img-01.jpg") no-repeat center;
+background-size: cover;
+}
+#content4{
+	height: 400px;
+	width:400px;
+	position:absolute;
+	top:400px;
+	left:750px;
+}
+#bannerimage4{
+	padding-bottom: 50px;
+margin-bottom: 20px;
+text-align: center;
+color: #f8f8f8;
+background: url("https://images.pexels.com/photos/1237119/pexels-photo-1237119.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center;
+background-size: cover;
+}
+#book{
+width:600px;
+ color: #fff;
+background-color: #c9302c;
+border-color: #ac2925;
+box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+padding: 8px 16px;
+font-size: 25px;
+border-radius: 6px;
+position:absolute;
+top:700px;
+left:450px;
+
+}
+.button:hover{
+cursor:pointer;
+opacity:0.8;
+}
+#book:hover{
+opacity:0.8;
+cursor:pointer;
+}
+
+		</style>
+</head>
+<body>
+	<center>
+<div class="topnav">
+  
+  <a href="index2.html">Home</a>
+  <a class="active" href="#project">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+</div>
+</center>
+<div id="content1">
+<div id="bannerimage1">
+<div class="inner-banner-image">
+<div class="banner_content">
+ <h1>Wedding Peeps</h1>
+<a href="wedding.html" class="button">Portfolio</a>
+</div>
+</div>
+</div>
+</div>
+<div id="content2">
+<div id="bannerimage2">
+<div class="inner-banner-image">
+<div class="banner_content">
+ <h1>Life in Wild</h1>
+<a href="wildlife.html" class="button">Portfolio</a>
+</div>
+</div>
+</div>
+</div>
+<div id="content3">
+<div id="bannerimage3">
+<div class="inner-banner-image">
+<div class="banner_content">
+ <h1>Clicking in Dark</h1>
+<a href="night.html" class="button">Portfolio</a>
+</div>
+</div>
+</div>
+</div>
+<div id="content4">
+<div id="bannerimage4">
+<div class="inner-banner-image">
+<div class="banner_content">
+ <h1>Nature Love</h1>
+<a href="nature.html" class="button">Portfolio</a>
+</div>
+</div>
+</div>
+</div>
+
+<div id="content5">
+<a  id="book" onclick="abc()"><center>Book Us</center></a>
+</div>
+
+<script>
+ function abc(){
+ var result=confirm("You need to sign up before making a booking");
+ if(result==true){
+ window.open("signup.html");}
+ else{
+ window.open("project.html");}
+ }
+</script>
+</body>
+</html>

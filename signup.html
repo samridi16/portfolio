@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign up</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+#f{
+height:700px;
+width:500px;
+position:absolute;
+top:100px;
+left:500px;
+}
+body{
+background-color:black;
+}
+label{
+color:white;
+}
+h1{
+color:white;
+}
+
+		</style>
+</head>
+<body>
+		<div id="f">
+		<form id="myForm">
+		<h1>Sign Up</h1>
+            <div class="form-group">
+			<label for="Name">Name</label>
+            <input type="text"  class="form-control" id="name" name="name" placeholder="Name" >
+            </div>
+			<div class="form-group">
+			<label for="email">Email</label>
+            <input type="email"  class="form-control" id="email" name="email" placeholder="Email" >
+            </div>
+            <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password"  class="form-control" name="password" id="password" placeholder="password">
+            </div>
+			<div class="form-group">
+			<label for="retype">Retype password</label>
+            <input type="password"  class="form-control" id="retype" name="retype" placeholder="Retype password" >
+            </div>
+			<div class="form-group">
+			<label for="contact">Contact</label>
+            <input type="tel"  class="form-control" id="contact" name="contact" placeholder="Contact" 
+			pattern="[0-9]" min="10" max="10" >
+            </div>
+			
+            </form>
+			<a class="btn btn-primary" role="button"  onclick="validateForm()">Submit</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;
+			<a  href="login.html">Already have an account?Login</a>
+            </div>
+			</div>
+			
+			
+			<script>
+			function validateForm() {
+  var x = document.forms["myForm"]["name"].value;
+  var a = document.forms["myForm"]["email"].value;
+  var b = document.forms["myForm"]["contact"].value;
+  var c = document.forms["myForm"]["password"].value;
+  var d = document.forms["myForm"]["retype"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  else if (a == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  else if (c=="") {
+    alert("Please enter password");
+    return false;
+  }
+   else if(d==""){
+  alert("Please enter password");
+    return false;
+  }
+   else if(c!=d){
+  alert("Passwords do not match.Please try again");
+    return false;
+  }
+  else if ( b== "") {
+    alert("Contact must be filled out");
+    return false;
+  }
+  
+  else{
+  window.open("login.html");
+  }
+}
+			</script>
+
+</body>
+</html>

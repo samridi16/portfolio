@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign up</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+#f{
+height:700px;
+width:500px;
+position:absolute;
+top:200px;
+left:500px;
+}
+body{
+background-color:black;
+}
+label{
+color:white;
+}
+h1{
+color:white;
+}
+#bt{
+width:500px;
+}
+
+		</style>
+</head>
+<body>
+		<div id="f">
+		<form id="myForm">
+		<h1>Login</h1>
+            
+			<div class="form-group">
+			<label for="email">Email</label>
+            <input type="email"  class="form-control" id="email" name="email" placeholder="Email" >
+            </div>
+            <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password"  class="form-control" name="password" id="password" placeholder="password">
+            </div>
+			</form>
+			<br>
+			<a class="btn btn-primary " role="button"  onclick="validateForm()" id="bt">Login</a>
+            </div>
+			
+			
+			
+			<script>
+			function validateForm() {
+  var a = document.forms["myForm"]["email"].value;
+  var c = document.forms["myForm"]["password"].value;
+   if (a == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  else if (c=="") {
+    alert("Please enter password");
+    return false;
+  }
+  
+  else{
+  window.open("booking.html");
+  }
+}
+			</script>
+
+</body>
+</html>
